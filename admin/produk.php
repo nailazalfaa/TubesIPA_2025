@@ -262,8 +262,8 @@ $p = mysqli_num_rows(mysqli_query($koneksi, "SELECT * FROM produk"));
                     <?php endif; ?>
                 </td>
                 <td style="display: flex; gap: 5px;">
-                    <a href="edit_menu.php?id=<?= $row['id_produk']; ?>" class="btn-aksi" style="background: #ff69b4; color: white; padding: 8px 12px; border-radius: 5px;"><i class="fas fa-edit"></i> Edit</a>
-                    <a href="php/hapus/hapus_produk.php?id=<?= $row['id_produk']; ?>" class="btn-aksi" style="background: #d86487; color: white; padding: 8px 12px; border-radius: 5px;" onclick="return confirm('Yakin ingin menghapus menu ini?')"> <i class="fas fa-trash"></i> Hapus </a>
+                <a href="php/edit/edit_produk.php?id=<?= $row['id_produk']; ?>" class="btn-aksi" style="background:#ff69b4; color:white; padding:8px 12px; border-radius:5px;"> <i class="fas fa-edit"></i> Edit </a>
+                <a href="php/hapus/hapus_produk.php?id=<?= $row['id_produk']; ?>" class="btn-aksi" style="background: #d86487; color: white; padding: 8px 12px; border-radius: 5px;" onclick="return confirm('Yakin ingin menghapus menu ini?')"> <i class="fas fa-trash"></i> Hapus </a>
                 </td>
                 </tr>
                 <?php endwhile; ?>

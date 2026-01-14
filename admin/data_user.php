@@ -195,7 +195,7 @@ $p = mysqli_num_rows(mysqli_query($koneksi, "SELECT * FROM produk"));
                                 </span>
                             </td>
                             <td style="padding: 15px 20px; text-align: center; display: flex; gap: 8px; justify-content: center;">
-                                <a href="edit_user.php?id=<?= $row['id_user']; ?>" style="background: #ff69b4; color: white; padding: 8px 14px; border-radius: 6px; text-decoration: none; font-size: 13px; transition: background 0.3s;" onmouseover="this.style.background='#ff1493'" onmouseout="this.style.background='#ff69b4'"><i class="fas fa-edit"></i> Edit</a>
+                                <a href="php/edit/edit_datauser.php?id=<?= $row['id_user']; ?>" class="btn-aksi" style="background:#ff69b4; color:white; padding:8px 12px; border-radius:5px;"> <i class="fas fa-edit"></i> Edit </a>
                                 <a href="php/hapus/hapus_user.php?id=<?= $row['id_user']; ?>" style="background: #d86487; color: white; padding: 8px 14px; border-radius: 6px; text-decoration: none; font-size: 13px;" onclick="return confirm('Yakin ingin menghapus user ini?')" onmouseover="this.style.background='#be185d'" onmouseout="this.style.background='#d86487'"> <i class="fas fa-trash"></i> Hapus </a>
 
                             </td>
